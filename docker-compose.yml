@@ -1,0 +1,7 @@
+version: '3.1'
+services:
+  game-service:
+    build: .
+    image: demo/game-service
+    ports:
+      - "8080:8080"

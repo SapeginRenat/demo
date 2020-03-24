@@ -28,6 +28,16 @@ Get Method
 }
 ```
 
+```aidl
+@Post Method
+
+/personage/create
+
+body:
+
+{ "id" : 7}
+```
+
 Levels should be in `level.properties` or auto generate if empty
 
 ```
@@ -49,6 +59,28 @@ default:
 ```$xslt
 {1:100, 10:110, 20:120, 30:150, 40:190, 50:200}
 ```
+
+Run with docker-compose(ubuntu*):
+
+```aidl
+
+cd root project
+
+ls 
+docker-compose.yml  Dockerfile  HELP.md  mvnw  mvnw.cmd  pom.xml  README.md src
+
+mnv package 
+
+// run
+sudo docker-compose up -d 
+
+// stop
+sudo docker-compose down
+
+
+```
+
+or run jar file!
 
 
 

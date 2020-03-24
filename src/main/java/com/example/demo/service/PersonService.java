@@ -2,6 +2,7 @@ package com.example.demo.service;
 
 import com.example.demo.domain.Person;
 import com.example.demo.exception.NotFoundException;
+import com.example.demo.exception.PersonageExistException;
 import com.example.demo.repo.PersonRepo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,6 +38,9 @@ public class PersonService {
     }
 
     public void createUser(Person person) {
+        if (personRepo.findById(person.getId()).isPresent()) {
+            throw new PersonageExistException();
+        }
         person.setExp(DEFAULT_VALUE);
         person.setTotalExp(DEFAULT_VALUE);
         person.setLevel(levelUtil.getLevelByExperience(DEFAULT_VALUE));
