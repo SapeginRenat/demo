@@ -1,6 +1,6 @@
-##DEMO SERVICE
+## DEMO SERVICE
 
-####RESTful spring boot 
+#### RESTful spring boot 
 
 example api: 
 
