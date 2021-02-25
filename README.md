@@ -67,9 +67,12 @@ Run with docker-compose(ubuntu*):
 cd root project
 
 ls 
-docker-compose.yml  Dockerfile  HELP.md  mvnw  mvnw.cmd  pom.xml  README.md src
+docker-compose.yml  Dockerfile  pom.xml  README.md  src
 
-mnv package 
+//optionality
+sudo apt install maven -y
+
+mvn package 
 
 // run
 sudo docker-compose up -d 
