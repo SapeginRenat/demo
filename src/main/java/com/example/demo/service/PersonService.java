@@ -19,10 +19,10 @@ public class PersonService {
     private final static int DEFAULT_VALUE = 0;
 
     @Autowired
-    PersonRepo personRepo;
+    public PersonRepo personRepo;
 
     @Autowired
-    LevelUtil levelUtil;
+    public LevelUtil levelUtil;
 
     @PostConstruct
     public void creatDefault() {
