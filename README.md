@@ -69,7 +69,7 @@ cd root project
 ls 
 docker-compose.yml  Dockerfile  HELP.md  mvnw  mvnw.cmd  pom.xml  README.md src
 
-mnv package 
+mvn package 
 
 // run
 sudo docker-compose up -d 
