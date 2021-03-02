@@ -16,10 +16,7 @@ import java.util.Optional;
 public class PersonController {
 
     @Autowired
-    PersonService personService;
-
-    @Autowired
-    PersonRepo personRepo;
+    public PersonService personService;
 
     @GetMapping("/personage/{id}")
     public Person getUserById(@PathVariable Integer id) {
