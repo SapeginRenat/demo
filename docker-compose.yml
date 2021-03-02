@@ -2,7 +2,7 @@ version: '3.5'
 services:
   game-service:
     build: .
-    image: demo/game-service
+    image: artemdubchikov/game-service
     environment:
       DB_HOST: ${DB_HOST:-postgres}
       SERVICE_PORT: ${SERVICE_PORT:-8080}
